@@ -30,10 +30,12 @@ public class Tarifa {
   private double tarifa;
 
   @ManyToOne
+  @JsonIgnoreProperties("tarifas")
   private Localidade origem;
 
   @OneToOne
   @JoinColumn(name = "destino_id")
+  @JsonIgnoreProperties("tarifas")
   private Localidade destino;
 
 }
