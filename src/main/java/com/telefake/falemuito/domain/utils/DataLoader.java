@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import com.telefake.falemuito.domain.enums.UFEnum;
 import com.telefake.falemuito.domain.models.Localidade;
 import com.telefake.falemuito.domain.models.Tarifa;
 import com.telefake.falemuito.repositories.ILocalidadeRepository;
@@ -33,22 +34,22 @@ public class DataLoader implements CommandLineRunner {
     localidadeRepo.saveAll(List.of(
       Localidade.builder().id(1)
                           .regiao("São Paulo")
-                          .uf("SP")
+                          .uf(UFEnum.SP)
                           .ddd("011")
                           .build(),
       Localidade.builder().id(2)
                           .regiao("São Paulo")
-                          .uf("SP")
+                          .uf(UFEnum.SP)
                           .ddd("016")
                           .build(),
       Localidade.builder().id(3)
                           .regiao("São Paulo")
-                          .uf("SP")
+                          .uf(UFEnum.SP)
                           .ddd("017")
                           .build(),
       Localidade.builder().id(4)
                           .regiao("São Paulo")
-                          .uf("SP")
+                          .uf(UFEnum.SP)
                           .ddd("018")
                           .build()
     ));
