@@ -37,8 +37,8 @@ public class FaleMuitoController {
                             .destino(request.getTarifa().getDestino().getDdd())
                             .minutos(request.getMinutos())
                             .plano(request.getPlano())
-                            .valorComFaleMais(valorComPlano)
-                            .valorSemFaleMais(valorSemPlano)
+                            .valorComFaleMuito(valorComPlano)
+                            .valorSemFaleMuito(valorSemPlano)
                             .build()
     );
   }

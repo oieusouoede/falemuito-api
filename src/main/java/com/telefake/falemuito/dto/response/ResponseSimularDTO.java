@@ -13,7 +13,7 @@ public class ResponseSimularDTO {
     private String destino;
     private int minutos;
     private FaleMuitoEnum plano;
-    private Double valorComFaleMais;
-    private Double valorSemFaleMais;
+    private Double valorComFaleMuito;
+    private Double valorSemFaleMuito;
 
 }
