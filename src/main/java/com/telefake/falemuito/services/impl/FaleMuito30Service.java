@@ -13,9 +13,8 @@ public class FaleMuito30Service implements IFaleMuitoService {
     public Double calcular(Tarifa tarifa, int minutos) {
         if (minutos <= 30){
             return 0.0;
-        } else {
-            return tarifa.getTarifa() * (minutos - 30) * 1.1;
         }
+        return tarifa.getTarifa() * (minutos - 30) * 1.1;
     }
 
     @Override

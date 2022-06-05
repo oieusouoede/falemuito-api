@@ -13,14 +13,12 @@ public class FaleMuito60Service implements IFaleMuitoService{
     public Double calcular(Tarifa tarifa, int minutos) {
         if (minutos <= 60){
             return 0.0;
-        } else {
-            return tarifa.getTarifa() * (minutos - 60) * 1.1;
         }
+        return tarifa.getTarifa() * (minutos - 60) * 1.1;
     }
 
     @Override
     public FaleMuitoEnum GetNomeDoPlano() {
         return FaleMuitoEnum.FALEMUITO60;
     }
-  
 }
