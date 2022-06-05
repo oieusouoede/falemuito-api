@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.telefake.falemuito.domain.enums.UFEnum;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -31,9 +31,8 @@ public class Localidade {
   private long id;
   private String ddd;
   private String regiao;
-  private String uf;
+  private UFEnum uf;
 
   @OneToMany(mappedBy = "origem", cascade = CascadeType.MERGE)
-  @JsonIgnoreProperties("origem")
   private List<Tarifa> tarifas;
 }
