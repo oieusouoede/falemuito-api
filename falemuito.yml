@@ -1,7 +1,0 @@
-version: "3.4"
-services:
-  app:
-    image: falemuito
-    container_name: falemuito
-    ports:
-      - 8083:8083
