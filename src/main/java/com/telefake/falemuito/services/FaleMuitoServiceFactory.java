@@ -1,7 +1,5 @@
 package com.telefake.falemuito.services;
 
-import org.springframework.stereotype.Service;
-
 import com.telefake.falemuito.domain.enums.FaleMuitoEnum;
 import com.telefake.falemuito.services.impl.FaleMuito120Service;
 import com.telefake.falemuito.services.impl.FaleMuito30Service;

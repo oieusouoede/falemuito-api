@@ -1,0 +1,7 @@
+version: "3.4"
+services:
+  falemuito-api:
+    image: edemarinho/falemuito-api
+    container_name: falemuito-api
+    ports:
+      - 8083:8083
